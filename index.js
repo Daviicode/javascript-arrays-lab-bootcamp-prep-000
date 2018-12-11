@@ -1,3 +1,8 @@
-var kittens = [] //define your array here
+var kittens = ["Milo", "Otis", "Garfield"]; //define your array here
+var newkittens = "Ralph"
 
-// Add your functions and code here
+function destructivelyAppendKitten (kittens, newkittens){ 
+ var kitten = kittens.concat(newkittens);
+ kittens.push(newkittens)
+ return kitten
+}
